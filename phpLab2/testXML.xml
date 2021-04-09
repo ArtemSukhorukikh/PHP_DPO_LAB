@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<workers>
+    <worker>
+        <name>Коля</name>
+        <age>25</age>
+        <salary>1000</salary>
+    </worker>
+    <worker>
+        <name>Вася</name>
+        <age>26</age>
+        <salary>2000</salary>
+    </worker>
+    <worker>
+        <name>Петя</name>
+        <age>27</age>
+        <salary>3000</salary>
+    </worker>
+</workers>
