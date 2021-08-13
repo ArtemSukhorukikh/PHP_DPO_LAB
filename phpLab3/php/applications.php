@@ -6,6 +6,7 @@ $result = checkApplicationInDB($dbConn, $_POST['email']);
 
 if ($result[0] == 'NEED_NEW') {
     addNewApplicationInDB($dbConn, $_POST['email']);
+    mail($_POST['email'], "Поступила новая заявка", "Новая заявка \n ФИО: $_POST[surname] $_POST[name] $_POST[patronymic] \n Телефон: $_POST[phone] \n Эл. почта: $_POST[email] \n Сообщение: $_POST[message]");
     $result = array(
         "operation" => 'NEW_APPLICATION',
         "surname" => $_POST['surname'],
